@@ -94,6 +94,7 @@ app.get('/products', (req, res) => {
     })
 })
 
+// Help Route
 app.get('/help/*', (req, res) => {
     res.render('404', {
         title: '404 Error',
@@ -102,6 +103,7 @@ app.get('/help/*', (req, res) => {
     })
 })
 
+// Page not found route
 app.get('*', (req, res) => {
     res.render('404', {
         title: '404 Error',
